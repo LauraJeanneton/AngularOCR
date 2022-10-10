@@ -8,6 +8,7 @@ import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SingleFaceSnapComponent } from './single-face-snap/single-face-snap.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     FaceSnapComponent,
     FaceSnapListComponent,
     HeaderComponent,
+    SingleFaceSnapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: LOCALE_ID, useValue: 'fr-FR' }],
