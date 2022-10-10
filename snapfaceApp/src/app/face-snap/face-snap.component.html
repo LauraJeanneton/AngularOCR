@@ -1,0 +1,15 @@
+<div class="face-snap-card" [ngClass]="{ snapped: isSnapped === true }">
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
+    <p>{{ faceSnap.description }}</p>
+    <p *ngIf="faceSnap.location === 'Paris'">
+      Photo prise à {{ faceSnap.location }}
+    </p>
+  
+    <p>
+      <button (click)="onSnap()">{{ buttonText }}</button>
+      <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }"
+        >🤌 {{ faceSnap.snaps }}</span
+      >
+    </p>
+  </div>
+  
